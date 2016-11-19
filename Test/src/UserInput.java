@@ -8,4 +8,7 @@ public class UserInput
 		return usIn.nextLine();
 	}
 	
+	public int intnumb(){
+		return usIn.nextInt();
+	}
 }
