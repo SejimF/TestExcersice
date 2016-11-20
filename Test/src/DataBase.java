@@ -1,3 +1,5 @@
+
+
 public class DataBase
 {
 	
@@ -11,7 +13,12 @@ public class DataBase
 		int x = 0;
 		System.out.println("Enter user name: "); name [x] = usIn.writeString();
 		System.out.println("Enter user job: "); job[x] = usIn.writeString();
-		System.out.println("Enter user age: "); age [x] = usIn.intnumb();
+		System.out.println("Enter user age: ");
+		try{
+		age [x] = usIn.intnumb();
+		}catch (Exception e){
+			System.out.println("Enter number");
+		}
 		x++;
 	}
 	
